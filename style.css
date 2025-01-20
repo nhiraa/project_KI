@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-size: larger;
+    font-family: Arial, sans-serif;
+}
+.header{
+    height: 90px;
+    padding: 10px;
+    background-color: #3155e8;
+    box-shadow: 5px 5px 10px 10px rgb(49, 85, 232);
+    font-size: larger;  
+}
+.footer{
+    background-color: #3155e8;
+    box-shadow: 5px 5px 10px 10px rgb(49, 85, 232);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    height: 280px;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+    float: none;
+}
+.navbar .nav-item{
+    position: relative;
+    color: black;
+    font-size: inherit;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+.navbar .nav-item:hover{
+    color: black;
+    font-size: 1.5rem;
+}
+.navbar .nav-item::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 50%;
+    height: 3px;
+    bottom: 2px;
+    background-color: black;
+    transition: width 1s, left 1s;
+}
+.navbar .nav-item:hover::after{
+    width: 100%;
+    left: 0;
+}
+.container{
+    display: flex;
+    padding: 20px;
+}
+.sidebar{
+    width: 25%;
+    padding: 20px;
+    margin-right: 15px;
+}
+.logo{
+    margin-bottom: 120px;
+    border-radius: 30px;
+}
+.logo2{
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.logo3{
+    margin-top: 50px;
+    border-radius: 30px;
+}
+.logo4{
+    margin-top: 50px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.konten{
+    text-indent: 20px;
+    flex-grow: 1;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.navbar-logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(logo.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.links2 a{
+    position: relative;
+    color: black;
+    font-size: inherit;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+.links2 a:hover{
+    color: black;
+    font-size: 1.1rem;
+}
+.links2 a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 50%;
+    height: 3px;
+    bottom: 2px;
+    background-color: black;
+    transition: width 1s, left 1s;
+}
+.links2 a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.s{
+    margin-left: 3px;
+}
+.simpan{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}    
+.simpan:hover{
+    background-color: darkred;
+    color: white;
+    transform: translateX(10px);
+}
+.image-container{
+    display: flex;
+    gap: 10px;
+}
+img{
+    width: 330px;
+    height: auto;
+}
+p, li{
+    font-size: medium;
+}
